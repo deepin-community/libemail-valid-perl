@@ -1,0 +1,426 @@
+libemail-valid-perl (1.202-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>  Thu, 19 May 2022 10:17:15 +0800
+
+libemail-valid-perl (1.202-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Remove Chris Butler from Uploaders. Thanks for your work!
+  * Remove Ron Lee from Uploaders. Thanks for your work!
+  * Remove Ryan Niebur from Uploaders. Thanks for your work!
+
+  [ Nuno Carvalho ]
+  * Import upstream version 1.202.
+  * debian/upstream/metadata: update upstream contact.
+  * debian/control:
+    + drop libtest-pod-* dependencies from B-D-I.
+    + improve long description.
+
+  [ gregor herrmann ]
+  * debian/upstream/metadata: update GitHub URLs.
+
+ -- Nuno Carvalho <smash@cpan.org>  Tue, 04 Oct 2016 18:06:07 +0100
+
+libemail-valid-perl (1.200-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Import upstream version 1.200.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 3.9.8.
+  * Update build dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 02 Jul 2016 20:46:03 +0200
+
+libemail-valid-perl (1.198-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 1.198
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Mon, 26 Oct 2015 22:12:49 +0100
+
+libemail-valid-perl (1.197-1) unstable; urgency=medium
+
+  * Import upstream version 1.197.
+  * Bump debhelper compatibility level to 9.
+  * Update test_net.patch.
+    Skip tests unconditionally which need network access.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 17 Oct 2015 22:34:42 +0200
+
+libemail-valid-perl (1.196-1) unstable; urgency=medium
+
+  * Import upstream version 1.196.
+  * Update years of packaging copyright.
+  * Mark package as autopkgtest-able.
+  * Declare compliance with Debian Policy 3.9.6.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 26 Jun 2015 22:49:37 +0200
+
+libemail-valid-perl (1.195-1) unstable; urgency=medium
+
+  * Team upload.
+  * Update Vcs-Browser URL to cgit web frontend
+  * Add debian/upstream/metadata
+  * Imported upstream version 1.195
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 14 Sep 2014 15:02:51 +0200
+
+libemail-valid-perl (1.194-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 29 May 2014 19:54:18 +0200
+
+libemail-valid-perl (1.193-1) unstable; urgency=medium
+
+  * Drop xz compression for {binary,source} package, set by default by
+    dpkg since 1.17.{0,6}.
+  * Strip trailing slash from metacpan URLs.
+
+  * New upstream release.
+  * Update years of packaging copyright.
+  * Drop build dependency on libcapture-tiny-perl.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 05 May 2014 23:01:05 +0200
+
+libemail-valid-perl (1.192-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Refresh patch test_net.patch.
+  * Update build dependencies.
+  * Drop Pre-Depends on old dpkg version.
+  * Update years of upstream and packaging copyright.
+  * Declare compliance with Debian Policy 3.9.4.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 30 Sep 2013 18:42:00 +0200
+
+libemail-valid-perl (0.190-1) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * Imported Upstream version 0.188
+  * Refresh test_net.patch patch
+  * Drop email_valid_0-187-bug75736.patch patch.
+    Patch was applied upstream.
+
+  [ gregor herrmann ]
+  * New upstream release 0.190.
+  * Update years of packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 07 Apr 2012 15:57:44 +0200
+
+libemail-valid-perl (0.187-2) unstable; urgency=low
+
+  * Team upload.
+  * Refresh test_net.patch patch
+  * Add email_valid_0-187-bug75736.patch patch.
+    Handle correctly valid email addresses '0@example.com'.
+    Thanks to Christopher Vollick <0@psycoti.ca> for the report
+    (Closes: #663663)
+  * Bump Debhelper compat level to 8.
+    Adjust Build-Depends on versioned debhelper to (>= 8).
+  * Simplify (build-)dependency on libnet-domain-tld-perl.
+    Make versioned (Build-)Depends(-Indep) on libnet-domain-tld-perl
+    unversioned, as the required version is already satisfied in oldstable.
+  * Update format for copyright file.
+    Update format to copyright-format 1.0 as released together with Debian
+    policy 3.9.3.
+  * Bump Standards-Version to 3.9.3
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Wed, 14 Mar 2012 21:08:15 +0100
+
+libemail-valid-perl (0.187-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+  * Use xz compression for source and binary packages.
+  * debian/watch: Remove comment about the watch file being an example.
+
+ -- Ansgar Burchardt <ansgar@debian.org>  Sat, 28 Jan 2012 22:04:53 +0100
+
+libemail-valid-perl (0.186-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+
+ -- Ansgar Burchardt <ansgar@debian.org>  Mon, 23 Jan 2012 10:27:00 +0100
+
+libemail-valid-perl (0.185-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Ansgar Burchardt ]
+  * New upstream release.
+  * debian/control: Convert Vcs-* fields to Git.
+  * debian/copyright: Refer to /usr/share/common-licenses/GPL-1; refer to
+    "Debian systems" instead of "Debian GNU/Linux systems".
+  * Bump Standards-Version to 3.9.2 (no changes).
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+ -- Ansgar Burchardt <ansgar@debian.org>  Mon, 15 Aug 2011 17:22:49 +0200
+
+libemail-valid-perl (0.184-1) unstable; urgency=low
+
+  * New upstream release
+  * Switched to source format 3.0 (quilt). Removed quilt framework.
+  * Upped Standards-Version to 3.8.4 (no changes).
+  * Add myself to Uploaders and copyright.
+
+ -- Chris Butler <chrisb@debian.org>  Sat, 12 Jun 2010 12:30:42 +0100
+
+libemail-valid-perl (0.182-1) unstable; urgency=low
+
+  [ Brian Cassidy ]
+  * New upstream release 0.180
+
+  [ gregor herrmann ]
+  * Add debian/README.source to document quilt usage, as required by
+    Debian Policy since 3.8.0.
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+
+  [ Ryan Niebur ]
+  * New upstream release 0.181
+  * Add myself to Uploaders
+  * Debian Policy 3.8.1
+  * Update ryan52's email address
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Changed: Replace versioned (build-)dependency on
+    perl (>= 5.6.0-{12,16}) with an unversioned dependency on perl (as
+    permitted by Debian Policy 3.8.3).
+
+  [ gregor herrmann ]
+  * Change my email address.
+  * Set Standards-Version to 3.8.3 (no changes).
+  * Switch to debhelper 7.
+  * New upstream release 0.182.
+  * Refresh test_net.patch and add header.
+  * Convert debian/copyright to new format.
+  * Fix hashbang in example.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 20 Dec 2009 14:44:40 +0100
+
+libemail-valid-perl (0.179-2) unstable; urgency=low
+
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Removed: XS-
+    Vcs-Svn fields.
+  * debian/rules: delete /usr/lib/perl5 only if it exists (closes: #467781).
+  * debian/watch: use dist-based URL.
+  * Set Standards-Version to 3.7.3 (no changes).
+  * Set debhelper compatibility level to 6.
+  * debian/rules: update with the help of dh-make-perl's templates; don't
+    install README any more (no useful information for users).
+  * Split out patch against t/valid.t into test_net.patch; add quilt
+    framework.
+  * debian/copyright: add upstream source location.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Wed, 27 Feb 2008 20:52:21 +0100
+
+libemail-valid-perl (0.179-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Krzysztof Krzyzaniak (eloy) <eloy@debian.org>  Tue, 28 Nov 2006 16:30:02 +0100
+
+libemail-valid-perl (0.176-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Krzysztof Krzyzaniak (eloy) <eloy@debian.org>  Wed,  2 Aug 2006 16:52:07 +0200
+
+libemail-valid-perl (0.175-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Krzysztof Krzyzaniak (eloy) <eloy@debian.org>  Fri, 30 Jun 2006 14:18:14 +0200
+
+libemail-valid-perl (0.174-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control:
+   - Uploaders: added me
+
+ -- Krzysztof Krzyzaniak (eloy) <eloy@debian.org>  Mon, 19 Jun 2006 13:35:31 +0200
+
+libemail-valid-perl (0.173-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Sat, 17 Jun 2006 14:32:54 +0200
+
+libemail-valid-perl (0.172-1) unstable; urgency=low
+
+  * New upstream release.
+  * Added libtest-pod-coverage-perl and libtest-pod-perl to Build-Depends-Indep.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Thu, 15 Jun 2006 15:11:21 +0200
+
+libemail-valid-perl (0.171-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Tue, 13 Jun 2006 00:17:17 +0200
+
+libemail-valid-perl (0.16-1) unstable; urgency=low
+
+  * New upstream release.
+  * Standards-Version set to 3.7.2.0 (no changes).
+  * Changed the tests (again) to work without a network connection.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Sun,  4 Jun 2006 23:07:39 +0200
+
+libemail-valid-perl (0.15-5) unstable; urgency=low
+
+  * Set the maintainer field to the DPG.
+  * Improve the tests to 'skip' any which can't be performed instead
+    of just ignoring them or faking an 'ok' result.  The network tests
+    now can only fail if Net::DNS::mx independently succeeds, and the
+    package builds will fail in the event of a real test failure again.
+    Enhances the 'fix' for #336188 and Closes: #363999.
+    Thanks again to Don for the prod to do this.
+
+ -- Ron Lee <ron@debian.org>  Fri, 28 Apr 2006 23:46:12 +0930
+
+libemail-valid-perl (0.15-4) unstable; urgency=high
+
+  * Ack patch from gregor herrmann, now also in Uploaders.
+    Thanks!
+  * Also ack (subsequent) 0.15-3.1 NMU from Don Armstrong.
+  * That makes 3 of us who each independently prepared an
+    upload for this one.  Time to look at joining the
+    debian-perl group to avoid this in future I guess...
+
+ -- Ron Lee <ron@debian.org>  Thu, 13 Apr 2006 21:36:48 +0930
+
+libemail-valid-perl (0.15-4.0) unstable; urgency=high
+
+  * Patch in module and debian/control (versioned dependency with regard to
+    the newer version of libnet-domain-tld-perl (closes: #360792).
+  * High urgency because package is partly unusable with newer versions of
+    libnet-domain-tld-perl.
+  * Bumped debhelper compatibility level to 5.
+  * Changed dh_installmanpages to dh_installman in debian/rules.
+  * Remove /usr/lib/perl5 from package.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Tue,  4 Apr 2006 19:58:22 +0200
+
+libemail-valid-perl (0.15-3.1) unstable; urgency=low
+
+  * Make Email::Valid use the non-OO interface to Net::Domain::TLD
+    (closes: #360792) Thanks to gregor herrmann for the original patch
+    which was modified.
+  
+ -- Don Armstrong <don@debian.org>  Thu, 20 Apr 2006 13:11:50 -0700
+
+libemail-valid-perl (0.15-3) unstable; urgency=high
+
+  * Don't fail to build the package if the tests are not successful.
+    Some of them require network access for MX checking, which is
+    good to check, but should not prohibit people offline from
+    building it (and ignoring tests that cannot succeed in that
+    environment).  Closes: #336188 thanks!
+  * High urgency as this fixes FTBFS with no substantive changes.
+
+ -- Ron Lee <ron@debian.org>  Mon, 31 Oct 2005 08:27:59 +1030
+
+libemail-valid-perl (0.15-2) unstable; urgency=low
+
+  * Fixed debian/watch not to get confused with other modules (i.e.
+    Email-Valid-Loose)
+
+ -- Gunnar Wolf <gwolf@debian.org>  Wed, 25 May 2005 10:54:53 -0500
+
+libemail-valid-perl (0.15-1) unstable; urgency=low
+
+  * New co-maintainer - Gunnar Wolf
+  * Added a debian/watch file
+
+ -- Gunnar Wolf <gwolf@debian.org>  Wed, 10 Mar 2004 19:48:12 -0600
+
+libemail-valid-perl (0.15-0.4) unstable; urgency=low
+
+  * Non-Maintainer Upload
+  * Sorry, in my previous (some hours ago) NMU I moved debhelper from
+    Build-Depends to Build-Depends-Indep. Marc Brockschmidt instructed
+    me that it is Lintian the one to blame, not the packaging. It goes
+    back to the place it previously was in.
+
+ -- Gunnar Wolf <gwolf@debian.org>  Tue,  9 Mar 2004 17:16:25 -0600
+
+libemail-valid-perl (0.15-0.3) unstable; urgency=low
+
+  * Non-Maintainer Upload
+  * Added Build-Depends-Indep and Depends on netbase (Closes: #236429)
+  * Moved Build-Depends: debhelper to Build-Depends-Indep: debhelper in
+    order to keep lintian from complaining - package is now
+    lintian-clean. 
+
+ -- Gunnar Wolf <gwolf@debian.org>  Tue,  9 Mar 2004 12:08:07 -0600
+
+libemail-valid-perl (0.15-0.2) unstable; urgency=low
+
+  * debian/control: Fixed (build-)dependency mess. (Closes: #235399)
+
+ -- Marc 'HE' Brockschmidt <he@debian.org>  Sun, 29 Feb 2004 11:18:54 +0100
+
+libemail-valid-perl (0.15-0.1) unstable; urgency=low
+
+  * Non maintainer upload (Though the maintainer allowed this)
+  * debian/copyright: Added pointers to the Artistic license and GPL. (Closes:
+    #157577)
+  * debian/README.Debian,debian/copyright: Moved information about the
+    creation of this package to the right file. (Closes: #157519)
+  * debian/changelog: Removed user variables at end of file.
+  * debian/control: Moved debhelper to Build-Depends, we use it in the clean
+    target of debian/rules.
+  * debian/control: Changed section to perl (from interpreters)
+  * debian/control: Bumped Standards-Version to 3.6.1 (no changes)
+
+ -- Marc Brockschmidt <marc@dch-faq.de>  Sun, 11 Jan 2004 11:17:24 +0100
+
+libemail-valid-perl (0.13-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Changed mailtools dep as the package has been renamed
+    Closes: #113026
+  * Updated for current standards.
+
+ -- Ron Lee <ron@debian.org>  Thu, 11 Oct 2001 04:30:52 -0700
+
+libemail-valid-perl (0.12-2) unstable; urgency=low
+
+  * fixed dh-make-perl README.Debain typo, that'll teach me to use
+    automated tools more carefully..  maybe :)
+
+ -- Ron Lee <ron@debian.org>  Sat,  9 Dec 2000 04:58:59 -0800
+
+libemail-valid-perl (0.12-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Ron Lee <ron@debian.org>  Sat,  9 Dec 2000 02:33:18 -0800

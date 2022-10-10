@@ -1,0 +1,32 @@
+Source: libemail-valid-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>,
+           Krzysztof Krzyzaniak (eloy) <eloy@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl,
+                     libmailtools-perl,
+                     libnet-dns-perl,
+                     libnet-domain-tld-perl,
+                     netbase
+Standards-Version: 3.9.8
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libemail-valid-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libemail-valid-perl.git
+Homepage: https://metacpan.org/release/Email-Valid
+
+Package: libemail-valid-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libmailtools-perl,
+         libnet-dns-perl,
+         libnet-domain-tld-perl,
+         netbase
+Description: Perl module for checking the validity of Internet email addresses
+ Email::Valid determines whether an email address is well-formed, and
+ optionally, whether a mail host exists for the domain.
+ .
+ Please note that there is no way to determine whether an address targets
+ a valid recipient without actually attempting to deliver a message.

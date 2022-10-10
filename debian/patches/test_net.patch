@@ -1,0 +1,19 @@
+Description: skip network tests
+Origin: vendor
+Bug-Debian: https://bugs.debian.org/336188
+ https://bugs.debian.org/363999
+Forwarded: not-needed
+Author: Ron Lee <ron@debian.org>
+Reviewed-by: gregor herrmann <gregoa@debian.org>
+Last-Update: 2015-10-17
+
+--- a/t/valid.t
++++ b/t/valid.t
+@@ -128,6 +128,7 @@
+ );
+ 
+ SKIP: {
++  skip "No online tests during Debian build.", 3;
+   skip "your dns appears missing or failing to resolve", 3
+     unless eval { $v->address(-address=> 'devnull@pobox.com', -mxcheck => 1) };
+ 
